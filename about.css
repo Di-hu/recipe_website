@@ -1,0 +1,142 @@
+/* Reset and General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff9a00;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #d47d00; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize title */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+/* About Container */
+.about-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-container:hover {
+    transform: scale(1.02); /* Subtle scaling effect on hover */
+}
+
+.about-container h2 {
+    color: #ff9a00;
+    font-size: 2.8em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Intro Section */
+.about-intro h2 {
+    font-size: 2.5em;
+    color: #ff9a00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Mission Section */
+.mission h2 {
+    color: #ff9a00;
+    font-size: 2.5em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.mission p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/* Team Section */
+.team h2 {
+    color: #ff9a00;
+    font-size: 2.5em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateX(10px); /* Subtle shift effect on hover */
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
+    margin-right: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+.team-member h3 {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff9a00;
+    color: white;
+    font-size: 1em;
+    margin-top: 60px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Light shadow at the top */
+}
+
+footer p {
+    font-size: 1.2em;
+    font-weight: 400;
+}

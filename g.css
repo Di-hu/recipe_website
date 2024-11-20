@@ -1,0 +1,83 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-color: #FF6347; /* Tomato color to represent grilled salmon */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Recipe Container Styling */
+.recipe-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Image Styling */
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ingredients and Instructions Styling */
+.recipe-details {
+    margin-bottom: 20px;
+}
+
+.recipe-details h2 {
+    color: #FF6347; /* Tomato color for consistency */
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+.ingredients-list, .instructions-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.ingredients-list li, .instructions-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Video Section Styling */
+.recipe-video {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.recipe-video h2 {
+    color: #FF6347;
+    margin-bottom: 10px;
+}
+
+.recipe-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FF6347;
+    color: white;
+    font-size: 0.9em;
+}

@@ -1,0 +1,336 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+/* Header styling */
+header {
+    height: 60px;
+    width: 100%;
+    background: #222121;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    font-weight: 550;
+}
+
+/* Navigation links styling */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px; /* Padding for better clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for color, background, and scale */
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+    color: #dfd9d9; /* Ensure text stays white */
+    background-color: rgb(245, 37, 9); /* Background color on hover */
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+/* Active state (optional) for the current page */
+nav ul li a.active {
+    background-color: rgb(245, 37, 9); /* Active link background */
+    color: #fff;
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.logo:hover {
+    color: rgb(245, 37, 9); /* Hover effect: changes color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    height: auto;
+    background: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.hero:hover {
+    opacity: 0.9; /* Slight opacity change on hover */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.search-box {
+    max-width: 550px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    border: 1px solid rgb(245, 37, 9);
+}
+
+.search-box button {
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    background-color: rgb(245, 37, 9);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.search-box button:hover {
+    background-color: #d32f2f; /* Hover effect: change background color */
+}
+
+/* Updated Recipe Section Layout */
+.recipes {
+    padding: 50px 0;
+}
+
+.recipes h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Flex container for horizontal scrolling and spacing */
+.recipe-section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px; /* Space between each card */
+    overflow-x: auto; /* Horizontal scrolling on smaller screens */
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory; /* Snap scrolling for better UX */
+}
+
+/* Card styling with a fixed square shape */
+.recipes-card {
+    flex: 0 0 220px; /* Fixed width for a square card */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transform and shadow transition */
+    scroll-snap-align: start; /* Each card snaps into view */
+}
+
+.recipes-card:hover {
+    transform: translateY(-10px); /* Hover effect: increases translation */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover effect: stronger shadow */
+}
+
+/* Image styling */
+.recipes-card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Styling for title, description, and button */
+.recipes-card h2 {
+    font-size: 18px;
+    color: #222;
+    margin: 10px 0;
+}
+
+.recipes-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.recipes-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgb(245, 37, 9);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.recipes-card a:hover {
+    background: #d32f2f; /* Hover effect: changes background color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    margin: 0 15px;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transform and color transition */
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.footer-social img:hover {
+    transform: scale(1.1); /* Hover effect: enlarges icon */
+}
+
+.footer-social a:hover {
+    transform: scale(1.2); /* Hover effect: enlarges social link */
+    color: rgb(245, 37, 9); /* Hover effect: changes color */
+}
+
+/* Footer links hover effect */
+footer a:hover {
+    color: rgb(245, 37, 9); /* Hover effect: change link color */
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+/* Assuming the container class of your dessert section is 'dessert-section' */
+
+.dessert-section {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the content */
+    align-items: center;      /* Vertically centers the content */
+    width: 100%;
+    height: 100vh;            /* Set to full viewport height */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Dessert Card Styling (if applicable) */
+.dessert-card {
+    width: 300px;            /* You can adjust the width */
+    height: 400px;           /* Set a height for the card */
+    padding: 15px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.dessert-card:hover {
+    transform: translateY(-10px);  /* Slight lift on hover */
+}
+
+.dessert-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Title and Description Styling for Dessert Card */
+.dessert-card h2 {
+    font-size: 20px;
+    color: #222;
+    margin: 10px 0;
+}
+
+.dessert-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.dessert-card a {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgb(245, 37, 9);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.dessert-card a:hover {
+    background: #d32f2f; /* Hover effect: changes background color */
+}
+/* Center the Dessert Corner heading */
+.featured-heading {
+    text-align: center; /* Centers the text horizontally */
+    font-size: 28px;    /* Optional: Adjust the font size */
+    color: #222;        /* Optional: Adjust the text color */
+    margin-bottom: 30px; /* Optional: Adjust the spacing below the heading */
+}

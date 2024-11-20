@@ -1,0 +1,97 @@
+/* Reset and General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    background-image: url('lemon-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Recipe Container */
+.recipe-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.recipe-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+/* Recipe Details */
+.recipe-details h2 {
+    color: #f2a900;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.ingredients-list, .instructions-list {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.ingredients-list li, .instructions-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Video Section */
+.recipe-video {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recipe-video h2 {
+    color: #f2a900;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f2a900;
+    color: white;
+    font-size: 0.9em;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Blog Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <!-- Popup Message (hidden by default) -->
+  <div id="popupMessage" class="popup"></div>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <div class="login-container">
+    <div class="login-form">
+      <h2>Welcome to Recipe Blog!</h2>
+      <p>Login to explore amazing recipes</p>
+      <form id="loginForm" onsubmit="return validateForm()">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button type="submit" id="loginButton">Login</button>
+      </form>
+      <div class="forgot-password">
+        <a href="#" onclick="openForgotPasswordModal()">Forgot Password?</a>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div class="modal" id="forgotPasswordModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeForgotPasswordModal()">&times;</span>
+      <h3>Forgot Password</h3>
+      <p>Enter your email to receive a reset link</p>
+      <input type="email" id="resetEmail" placeholder="Enter your email" required>
+      <button onclick="resetPassword()">Send Reset Link</button>
+    </div>
+    <div id="resetMessage" class="reset-message"></div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
